@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherReport</string>
+    <string name="search_hint">输入城市名称</string>
+    <string name="search">搜索</string>
+    <string name="current_weather">当前天气</string>
+    <string name="temperature">温度</string>
+    <string name="feels_like">体感温度</string>
+    <string name="humidity">湿度</string>
+    <string name="wind_speed">风速</string>
+    <string name="pressure">气压</string>
+    <string name="weather_description">天气描述</string>
+    <string name="forecast">天气预报</string>
+    <string name="error_message">获取天气数据失败，请检查网络连接或城市名称</string>
+    <string name="api_key">YOUR_API_KEY</string>
+</resources>
