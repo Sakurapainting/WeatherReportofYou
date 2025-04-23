@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="8dp">
 
             <EditText
                 android:id="@+id/edit_city"
@@ -42,7 +42,31 @@
                 android:layout_marginStart="8dp"
                 android:text="@string/search"
                 android:backgroundTint="@color/primary" />
+                
+            <Button
+                android:id="@+id/btn_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/favorites"
+                android:backgroundTint="@color/primary"
+                android:drawableStart="@drawable/ic_list"
+                android:drawablePadding="4dp" />
         </LinearLayout>
+        
+        <!-- 收藏按钮 -->
+        <Button
+            android:id="@+id/btn_toggle_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_favorite_border"
+            android:text="@string/add_to_favorites"
+            android:backgroundTint="@color/primary"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawablePadding="8dp" />
 
         <!-- 当前天气卡片 -->
         <androidx.cardview.widget.CardView

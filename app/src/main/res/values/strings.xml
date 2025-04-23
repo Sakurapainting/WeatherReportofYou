@@ -12,4 +12,12 @@
     <string name="forecast">天气预报</string>
     <string name="error_message">获取天气数据失败，请检查网络连接或城市名称</string>
     <string name="api_key">YOUR_API_KEY</string>
+    
+    <!-- 收藏功能相关的字符串 -->
+    <string name="favorites">收藏城市</string>
+    <string name="add_to_favorites">添加收藏</string>
+    <string name="remove_from_favorites">取消收藏</string>
+    <string name="favorite_added">已添加到收藏</string>
+    <string name="favorite_removed">已从收藏中移除</string>
+    <string name="no_favorites">暂无收藏城市</string>
 </resources>

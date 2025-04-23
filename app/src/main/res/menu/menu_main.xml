@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/ic_list"
+        android:title="收藏城市"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_toggle_favorite"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="添加收藏"
+        app:showAsAction="ifRoom"
+        android:visible="false" />
+</menu>
