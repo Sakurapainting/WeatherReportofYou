@@ -57,4 +57,7 @@ dependencies {
     
     // RecyclerView for lists
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    
+    // MPAndroidChart for displaying weather data trends
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

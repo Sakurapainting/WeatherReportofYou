@@ -20,4 +20,14 @@
     <string name="favorite_added">已添加到收藏</string>
     <string name="favorite_removed">已从收藏中移除</string>
     <string name="no_favorites">暂无收藏城市</string>
+    
+    <!-- 图表功能相关的字符串 -->
+    <string name="weather_trends">天气趋势图</string>
+    <string name="temperature_trend">温度变化</string>
+    <string name="feels_like_trend">体感温度变化</string>
+    <string name="humidity_trend">湿度变化</string>
+    <string name="pressure_trend">气压变化</string>
+    <string name="wind_trend">风速变化</string>
+    <string name="no_chart_data">暂无图表数据</string>
+    <string name="hourly_forecast">24小时预报</string>
 </resources>

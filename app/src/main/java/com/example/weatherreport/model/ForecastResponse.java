@@ -32,6 +32,9 @@ public class ForecastResponse {
         @SerializedName("dt_txt")
         private String dateTimeText;
         
+        @SerializedName("wind")
+        private Wind wind;
+        
         public long getDateTime() {
             return dateTime;
         }
@@ -46,6 +49,10 @@ public class ForecastResponse {
         
         public String getDateTimeText() {
             return dateTimeText;
+        }
+        
+        public Wind getWind() {
+            return wind;
         }
     }
     
@@ -65,6 +72,9 @@ public class ForecastResponse {
         @SerializedName("humidity")
         private int humidity;
         
+        @SerializedName("pressure")
+        private int pressure;
+        
         public float getTemperature() {
             return temperature;
         }
@@ -83,6 +93,10 @@ public class ForecastResponse {
         
         public int getHumidity() {
             return humidity;
+        }
+        
+        public int getPressure() {
+            return pressure;
         }
     }
     
@@ -129,6 +143,22 @@ public class ForecastResponse {
         
         public String getCountry() {
             return country;
+        }
+    }
+    
+    public static class Wind {
+        @SerializedName("speed")
+        private float speed;
+        
+        @SerializedName("deg")
+        private int degree;
+        
+        public float getSpeed() {
+            return speed;
+        }
+        
+        public int getDegree() {
+            return degree;
         }
     }
 }
