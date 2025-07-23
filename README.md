@@ -140,12 +140,12 @@
 ## 🤝 贡献
 
 我们欢迎所有形式的贡献！无论是新功能、bug 修复、文档改进还是其他建议。
-[贡献文档](.github\CONTRIBUTING.md)
+[贡献文档](.github/CONTRIBUTING.md)
 
 ### 🐛 问题报告
 发现 bug？请通过 [Issues](https://github.com/Sakurapainting/WeatherReportofYou/issues) 报告。
-[Bug Issue 模版](.github\ISSUE_TEMPLATE\bug_report.md)
-[Feature request 模版](.github\ISSUE_TEMPLATE\feature_request.md)
+[Bug Issue 模版](.github/ISSUE_TEMPLATE/bug_report.md)
+[Feature request 模版](.github/ISSUE_TEMPLATE/feature_request.md)
 
 ## 📝 版本控制
 
