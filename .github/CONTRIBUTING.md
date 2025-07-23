@@ -11,11 +11,11 @@
 ### 报告 Bug
 
 [Bug issue 模版](ISSUE_TEMPLATE\bug_report.md)
-[Feature Request 模版](ISSUE_TEMPLATE\feature_request.md)
+
 
 ### 建议功能
 
-
+[Feature Request 模版](ISSUE_TEMPLATE\feature_request.md)
 
 ### Pull Requests
 
