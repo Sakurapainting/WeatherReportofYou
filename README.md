@@ -1,6 +1,6 @@
 
 
-# 天气预报
+# WeatherReportofYou - WRY
 
 
 <br />
@@ -8,7 +8,7 @@
  
 ## 目录
 
-- [天气预报](#天气预报)
+- [WeatherReportofYou - WRY](#weatherreportofyou---wry)
   - [目录](#目录)
     - [上手指南](#上手指南)
           - [开发前的配置要求](#开发前的配置要求)
@@ -37,11 +37,31 @@
 
 ###### **安装步骤**
 
-Clone the repo
+1. Clone the repo
 
 ```sh
-https://github.com/Sakurapainting/ButtonControlCamera
+https://github.com/Sakurapainting/WeatherReportofYou
 ```
+
+2. 配置 API Key
+
+   - 访问 [OpenWeatherMap](https://openweathermap.org/api) 注册并获取免费的 API key
+   - 在项目根目录的 `local.properties` 文件中添加你的 API key：
+   
+   ```properties
+   WEATHER_API_KEY=你的API密钥
+   ```
+   
+   或者设置环境变量：
+   ```sh
+   # Windows
+   set WEATHER_API_KEY=你的API密钥
+   
+   # Linux/macOS
+   export WEATHER_API_KEY=你的API密钥
+   ```
+
+3. 编译运行项目
 
 ### 接线：
 

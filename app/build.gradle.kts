@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+import java.util.Properties
+
 android {
     namespace = "com.example.weatherreport"
     compileSdk = 35
@@ -14,6 +16,18 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        
+        // 从 local.properties 文件或环境变量中读取 API key
+        val localPropertiesFile = rootProject.file("local.properties")
+        val localProperties = Properties()
+        if (localPropertiesFile.exists()) {
+            localPropertiesFile.inputStream().use { localProperties.load(it) }
+        }
+        
+        val weatherApiKey = localProperties.getProperty("WEATHER_API_KEY") 
+            ?: System.getenv("WEATHER_API_KEY") 
+            ?: ""
+        buildConfigField("String", "WEATHER_API_KEY", "\"$weatherApiKey\"")
     }
 
     buildTypes {
@@ -28,6 +42,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        buildConfig = true
     }
 }
 
