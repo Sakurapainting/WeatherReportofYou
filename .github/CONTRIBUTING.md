@@ -10,21 +10,12 @@
 
 ### 报告 Bug
 
-在创建 bug 报告之前，请检查现有的 issues 以避免重复。如果您发现一个 bug，请：
+[Bug issue 模版](ISSUE_TEMPLATE\bug_report.md)
 
-1. 使用清晰描述性的标题
-2. 提供详细的复现步骤
-3. 包含设备和版本信息
-4. 如果可能，提供截图或日志
 
 ### 建议功能
 
-我们欢迎新功能建议！请：
-
-1. 检查是否已有相似的建议
-2. 详细描述功能需求
-3. 解释这个功能的价值
-4. 考虑实现的可行性
+[Feature Request 模版](ISSUE_TEMPLATE\feature_request.md)
 
 ### Pull Requests
 
