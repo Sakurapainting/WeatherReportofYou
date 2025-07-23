@@ -52,7 +52,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String API_KEY = ""; // 替换为你的OpenWeatherMap API密钥
+    private static final String API_KEY = BuildConfig.WEATHER_API_KEY; // 从 BuildConfig 读取 API 密钥
     private static final String UNITS = "metric"; // 使用摄氏度
     private static final int REQUEST_FAVORITES = 1001;
 
@@ -114,6 +114,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // 验证 API key 配置
+        if (!ApiKeyValidator.validateApiKey()) {
+            Toast.makeText(this, "API key 未配置，请检查 local.properties 文件", Toast.LENGTH_LONG).show();
+            Log.e("WeatherApp", "API key 配置错误");
+        }
 
         // 初始化API服务
         weatherApiService = RetrofitClient.getWeatherApiService();
