@@ -36,7 +36,6 @@
     - [Debug 版本](#debug-版本)
     - [Release 版本](#release-版本)
   - [🤝 贡献](#-贡献)
-    - [💡 如何参与开源项目](#-如何参与开源项目)
     - [🐛 问题报告](#-问题报告)
   - [📝 版本控制](#-版本控制)
     - [版本号规则](#版本号规则)
@@ -141,39 +140,12 @@
 ## 🤝 贡献
 
 我们欢迎所有形式的贡献！无论是新功能、bug 修复、文档改进还是其他建议。
-
-### 💡 如何参与开源项目
-
-贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
-
-1. **Fork 项目** 🍴
-   ```bash
-   # 在 GitHub 上点击 Fork 按钮
-   ```
-
-2. **创建功能分支** 🌿
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-
-3. **提交更改** 💾
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-
-4. **推送到分支** 🚀
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-
-5. **打开 Pull Request** 📝
+[贡献文档](.github\CONTRIBUTING.md)
 
 ### 🐛 问题报告
-发现 bug？请通过 [Issues](https://github.com/Sakurapainting/WeatherReportofYou/issues) 报告，包含：
-- 设备信息
-- 复现步骤
-- 预期行为
-- 实际行为
+发现 bug？请通过 [Issues](https://github.com/Sakurapainting/WeatherReportofYou/issues) 报告。
+[Bug Issue 模版](.github\ISSUE_TEMPLATE\bug_report.md)
+[Feature request 模版](.github\ISSUE_TEMPLATE\feature_request.md)
 
 ## 📝 版本控制
 

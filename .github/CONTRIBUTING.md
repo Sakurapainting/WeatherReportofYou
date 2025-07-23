@@ -35,8 +35,11 @@
    - 添加适当的注释
    - 确保代码通过测试
 4. **提交更改** (`git commit -m 'Add some AmazingFeature'`)
-5. **推送到分支** (`git push origin feature/AmazingFeature`)
-6. **创建 Pull Request**
+5. **如果有其他人更改仓库内容** (`git remote add upstream https://github.com/Sakurapainting/WeatherReportofYou.git` )
+6. `git fetch upstream`
+7. `git rebase upstream/dev`
+8. **推送到分支** (`git push origin feature/AmazingFeature`)
+9. **创建 Pull Request**
 
 ### 代码风格
 
