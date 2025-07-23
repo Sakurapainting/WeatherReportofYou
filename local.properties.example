@@ -1,0 +1,9 @@
+## This file shows the format for local.properties
+# Copy this file to local.properties and fill in your actual API key
+#
+# Location of the SDK. This is only used by Gradle.
+sdk.dir=D\:\\AndroidSDK
+
+# Add your OpenWeatherMap API key here
+# Get your free API key from: https://openweathermap.org/api
+WEATHER_API_KEY=your_api_key_here
