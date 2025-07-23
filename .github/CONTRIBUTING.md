@@ -36,8 +36,8 @@
    - 确保代码通过测试
 4. **提交更改** (`git commit -m 'Add some AmazingFeature'`)
 5. **如果有其他人更改仓库内容** (`git remote add upstream https://github.com/Sakurapainting/WeatherReportofYou.git` )
-6. `git fetch upstream`
-7. `git rebase upstream/dev`
+6. **获取他人的更改** `git fetch upstream`
+7. **建议使用rebase** `git rebase upstream/dev`
 8. **推送到分支** (`git push origin feature/AmazingFeature`)
 9. **创建 Pull Request**
 
