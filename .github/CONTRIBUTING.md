@@ -60,6 +60,9 @@ type(scope): description
 - `refactor`: 重构
 - `test`: 测试相关
 - `chore`: 构建工具或辅助工具的变动
+- `perf`: 优化性能
+
+参考：https://www.conventionalcommits.org/zh-hans/v1.0.0/
 
 ### 开发环境设置
 
