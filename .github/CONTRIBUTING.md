@@ -20,16 +20,16 @@
 ### Pull Requests
 
 1. **Fork 仓库**
-2. **创建功能分支** (`git checkout -b feature/AmazingFeature`)
+2. **创建功能分支** (`git checkout -b issue-123-fix`)(不建议直接在dev上开发)
 3. **编写代码**
    - 遵循现有的代码风格
    - 添加适当的注释
    - 确保代码通过测试
-4. **提交更改** (`git commit -m 'Add some AmazingFeature'`)
+4. **提交更改** (`git commit -m '<提交信息格式>')
 5. **如果有其他人更改仓库内容** (`git remote add upstream https://github.com/Sakurapainting/WeatherReportofYou.git` )
 6. **获取他人的更改** `git fetch upstream`
-7. **建议使用rebase** `git rebase upstream/dev`
-8. **推送到分支** (`git push origin feature/AmazingFeature`)
+7. **建议使用rebase** `git rebase upstream/dev`(主仓库的默认分支是dev，release pr的时候才会合到main里)
+8. **推送到分支** (`git push origin issue-123-fix`)
 9. **创建 Pull Request**
 
 ### 代码风格
