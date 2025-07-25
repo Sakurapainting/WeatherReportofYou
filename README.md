@@ -50,7 +50,7 @@
 - **Android Studio** Arctic Fox 或更高版本
 - **JDK 11** 或更高版本
 - **Android SDK** API 24+ (Android 7.0)
-- **Gradle 8.0+**
+- **Gradle 8.0+** （构建本项目时gradle会自动配置与本项目同版本的gradle）
 
 ###  安装步骤
 
