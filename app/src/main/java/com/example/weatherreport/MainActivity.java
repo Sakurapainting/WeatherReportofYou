@@ -168,6 +168,13 @@ public class MainActivity extends AppCompatActivity {
         forecastRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         forecastAdapter = new ForecastAdapter(this, new ArrayList<>());
         forecastRecyclerView.setAdapter(forecastAdapter);
+
+        Button switchLangBtn = findViewById(R.id.btn_switch_language);
+        switchLangBtn.setOnClickListener(v -> {
+            Locale current = getResources().getConfiguration().locale;
+            Locale newLocale = current.getLanguage().equals("zh") ? Locale.ENGLISH : Locale.CHINESE;
+            switchLanguage(newLocale);
+        });
     }
 
     @Override
@@ -201,6 +208,10 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        // 隐藏切换语言按钮
+        Button switchLangBtn = findViewById(R.id.btn_switch_language);
+        switchLangBtn.setVisibility(View.GONE);
+        
         // 显示加载进度条，隐藏其他视图
         showLoading();
 
@@ -214,6 +225,13 @@ public class MainActivity extends AppCompatActivity {
         getForecast(cityName);
     }
 
+    private void switchLanguage(Locale locale) {
+        // 更新应用语言
+        android.content.res.Configuration config = getResources().getConfiguration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+        recreate(); // 重启Activity以应用新语言
+    }
     private void getCurrentWeather(String cityName) {
         // 对于日本城市，确保使用英文名称
         final String finalCityName;
