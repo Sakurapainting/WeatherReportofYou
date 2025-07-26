@@ -26,7 +26,7 @@
    - 添加适当的注释
    - 确保代码通过测试
 4. **提交更改** (`git commit -m '<提交信息格式>')
-5. **如果有其他人更改仓库内容** (`git remote add upstream https://github.com/Sakurapainting/WeatherReportofYou.git` )
+5. **如果有其他人更改仓库内容，你想从主仓库同步改动到fork仓库，不要用Github网页的sync fork！那样会产生一条merge commit** (`git remote add upstream https://github.com/Sakurapainting/WeatherReportofYou.git` )
 6. **获取他人的更改** `git fetch upstream`
 7. **建议使用rebase** `git rebase upstream/dev`(主仓库的默认分支是dev，release pr的时候才会合到main里)
 8. **推送到分支** (`git push origin issue-123-fix`)
