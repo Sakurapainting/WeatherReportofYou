@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WeatherReport</string>
+    <string name="search_hint">Enter city name</string>
+    <string name="search">Search</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="temperature">Temperature</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="weather_description">Weather Description</string>
+    <string name="forecast">Weather Forecast</string>
+    <string name="error_message">Failed to get weather data. Please check your network connection or city name.</string>
+    <string name="api_key">YOUR_API_KEY</string>
+    <string name="switch_language">Switch Language</string>
+
+    <!-- Favorites related strings -->
+    <string name="favorites">Favorite Cities</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="favorite_added">Added to favorites</string>
+    <string name="favorite_removed">Removed from favorites</string>
+    <string name="no_favorites">No favorite cities yet</string>
+
+    <!-- Chart related strings -->
+    <string name="weather_trends">Weather Trends Chart</string>
+    <string name="temperature_trend">Temperature Trend</string>
+    <string name="feels_like_trend">Feels Like Trend</string>
+    <string name="humidity_trend">Humidity Trend</string>
+    <string name="pressure_trend">Pressure Trend</string>
+    <string name="wind_trend">Wind Speed Trend</string>
+    <string name="no_chart_data">No chart data available</string>
+    <string name="hourly_forecast">24-Hour Forecast</string>
+</resources>

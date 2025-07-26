@@ -11,10 +11,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,8 +29,8 @@
                 android:id="@+id/search_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="8dp">
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/edit_city"
@@ -44,33 +46,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/search"
-                    android:backgroundTint="@color/primary" />
-                    
+                    android:backgroundTint="@color/primary"
+                    android:text="@string/search" />
+
                 <Button
                     android:id="@+id/btn_favorites"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/favorites"
                     android:backgroundTint="@color/primary"
                     android:drawableStart="@drawable/ic_list"
-                    android:drawablePadding="4dp" />
+                    android:drawablePadding="4dp"
+                    android:text="@string/favorites" />
+
             </LinearLayout>
-            
+
             <!-- 收藏按钮 -->
             <Button
                 android:id="@+id/btn_toggle_favorite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_favorite_border"
-                android:text="@string/add_to_favorites"
-                android:backgroundTint="@color/primary"
-                android:visibility="gone"
                 android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/primary"
+                android:drawableStart="@drawable/ic_favorite_border"
+                android:drawablePadding="8dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:drawablePadding="8dp" />
+                android:text="@string/add_to_favorites"
+                android:visibility="gone" />
 
             <!-- 当前天气卡片 -->
             <androidx.cardview.widget.CardView
@@ -78,9 +81,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:visibility="gone"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                android:visibility="gone">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -91,11 +94,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
                         android:text="@string/current_weather"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
                         android:textColor="@color/text_primary"
-                        android:layout_marginBottom="8dp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -112,26 +115,26 @@
                                 android:id="@+id/tv_city_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/text_primary"
                                 android:textSize="24sp"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_primary"
                                 tools:text="北京" />
 
                             <TextView
                                 android:id="@+id/tv_weather_description"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="16sp"
                                 android:textColor="@color/text_secondary"
+                                android:textSize="16sp"
                                 tools:text="晴天" />
 
                             <TextView
                                 android:id="@+id/tv_temperature"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="36sp"
-                                android:textColor="@color/text_primary"
                                 android:layout_marginTop="8dp"
+                                android:textColor="@color/text_primary"
+                                android:textSize="36sp"
                                 tools:text="25°C" />
                         </LinearLayout>
 
@@ -145,9 +148,9 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/divider"
                         android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp" />
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/divider" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -219,31 +222,31 @@
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-            
+
             <!-- 天气趋势图卡片 -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/weather_chart_card"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginBottom="16dp"
+                android:visibility="gone"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                android:visibility="gone">
-                
+                app:cardElevation="4dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:padding="12dp"
                         android:text="@string/weather_trends"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
                         android:textColor="@color/text_primary"
-                        android:padding="12dp" />
-                        
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <FrameLayout
                         android:id="@+id/chart_container"
                         android:layout_width="match_parent"
@@ -256,11 +259,11 @@
                 android:id="@+id/tv_forecast_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="@string/forecast"
+                android:textColor="@color/text_primary"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
-                android:layout_marginBottom="8dp"
                 android:visibility="gone" />
 
             <!-- 天气预报列表 -->
@@ -284,12 +287,19 @@
                 android:id="@+id/tv_error"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:text="@string/error_message"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="16sp"
-                android:gravity="center"
-                android:layout_marginTop="16dp"
                 android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_switch_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/switch_language" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
